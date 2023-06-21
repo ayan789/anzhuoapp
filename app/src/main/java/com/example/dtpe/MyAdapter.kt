@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.squareup.picasso.Picasso
 
 class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
@@ -17,7 +19,8 @@ class MyAdapter(private val itemList: List<Item>) : RecyclerView.Adapter<MyAdapt
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = itemList[position]
-        holder.imageView.setImageResource(item.imageResId)
+
+        Picasso.get().load( "https:"+item.imageResId).into(holder.imageView);
         holder.textView.text = item.text
     }
 

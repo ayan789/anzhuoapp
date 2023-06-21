@@ -1,3 +1,3 @@
 package com.example.dtpe
 
-data class Item(val imageResId: Int, val text: String)
+data class Item(val imageResId: String, val text: String)
