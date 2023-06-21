@@ -14,4 +14,5 @@ class BActivity : AppCompatActivity() {
             finish() // 销毁当前活动（B 页面）
         }
     }
+
 }
