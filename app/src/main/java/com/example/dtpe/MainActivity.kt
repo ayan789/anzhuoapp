@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_item3 -> {
                     // 处理菜单项3的点击事件
+                    navigateToCPage()
                     true
                 }
                 else -> false
@@ -129,6 +130,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         return itemList
+    }
+
+    private fun navigateToCPage() {
+        val intent = Intent(this, CActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToBPage() {

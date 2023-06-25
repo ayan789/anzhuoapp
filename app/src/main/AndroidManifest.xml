@@ -23,6 +23,9 @@
         <activity
                 android:name="com.example.dtpe.BActivity"
                 android:label="@string/app_nameb" />
+        <activity
+                android:name="com.example.dtpe.CActivity"
+                android:label="@string/app_namec" />
     </application>
 
 </manifest>
